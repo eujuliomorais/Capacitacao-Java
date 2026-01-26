@@ -1,4 +1,4 @@
-# Capacitacao em Java
+# Capacitação em Java
 
 <hr>
 
