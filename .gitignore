@@ -3,13 +3,13 @@
 *.iws
 out/
 
-/nbproject/
-/build/
+nbproject/
+build/
+dist/
+nbbuild/
 build.xml
 nbbuild.xml
-dist/
+manifest.mf
 *.class
-.netbeans_automatic_build
-.netbeans_update_resources
 
 .DS_Store
