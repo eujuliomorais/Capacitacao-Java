@@ -1,38 +1,15 @@
-/Unidade 1/Atividade1/nbproject/private/
-/Unidade 1/Atividade1/build/
-/Unidade 1/Atividade2/nbproject/private/
-/Unidade 1/Atividade2/build/
-/Unidade 1/Atividade3/nbproject/private/
-/Unidade 1/Atividade3/build/
-/Unidade 1/Atividade4/nbproject/private/
-/Unidade 1/Atividade4/build/
-/Unidade 1/Atividade5/nbproject/private/
-/Unidade 1/Atividade5/build/
-/Unidade 1/Atividade6/nbproject/private/
-/Unidade 1/Atividade6/build/
-/Unidade 1/Atividade7/nbproject/private/
-/Unidade 1/Atividade7/build/
-/Unidade 1/Atividade8/nbproject/private/
-/Unidade 1/Atividade8/build/
-/Unidade 1/Atividade9/nbproject/private/
-/Unidade 1/Atividade9/build/
-/Unidade 1/Atividade10/nbproject/private/
-/Unidade 1/Atividade10/build/
-/Unidade 2/Atividade1/nbproject/private/
-/Unidade 2/Atividade1/build/
-/Unidade 2/Atividade2/nbproject/private/
-/Unidade 2/Atividade2/build/
-/Unidade 2/Atividade3/nbproject/private/
-/Unidade 2/Atividade3/build/
-/Unidade 2/Atividade4/nbproject/private/
-/Unidade 2/Atividade4/build/
-/Unidade 2/Atividade5/nbproject/private/
-/Unidade 2/Atividade5/build/
-/Unidade 2/Atividade6/nbproject/private/
-/Unidade 2/Atividade6/build/
-/Unidade 2/Atividade7/nbproject/private/
-/Unidade 2/Atividade7/build/
-/Unidade 2/Atividade8/nbproject/private/
-/Unidade 2/Atividade8/build/
-/Unidade 2/Atividade9/nbproject/private/
-/Unidade 2/Atividade9/build/
+.idea/
+*.iml
+*.iws
+out/
+
+/nbproject/
+/build/
+build.xml
+nbbuild.xml
+dist/
+*.class
+.netbeans_automatic_build
+.netbeans_update_resources
+
+.DS_Store
