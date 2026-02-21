@@ -12,6 +12,7 @@ public class Main {
         TaskManager listaTarefas = new TaskManager();
 
         int opcao;
+        int incrementeID = 0;
 
         String titulo;
         String descricao;
@@ -31,15 +32,35 @@ public class Main {
             scanner.nextLine();
 
             if(opcao == 1){
+                incrementeID += 1;
+
+                System.out.println("Digite o título da nova tarefa:");
                 titulo = scanner.nextLine();
+
+                System.out.println("Digite a descrição da tarefa");
                 descricao = scanner.nextLine();
-                listaTarefas.adicionarTarefa(titulo, descricao, concluida);
+
+                listaTarefas.adicionarTarefa(incrementeID, titulo, descricao, concluida);
             }
+
             else if(opcao == 2){
                 listaTarefas.listarTarefas();
             }
+
             else if(opcao == 3){
 
+            }
+
+            else if(opcao == 4){
+                int removerID = 0;
+                System.out.println("\nDigite o ID da tarefa a ser removida");
+                removerID = scanner.nextInt();
+                listaTarefas.removerTarefa(removerID);
+            }
+
+            else if(opcao == 5){
+                System.out.println("\nPrograma encerrado!");
+                break;
             }
         }
     }

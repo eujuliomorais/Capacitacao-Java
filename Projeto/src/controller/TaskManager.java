@@ -12,17 +12,18 @@ public class TaskManager {
         this.tarefas = new ArrayList<>();
     }
 
-    public void adicionarTarefa(String titulo, String descricao, boolean concluida){
-        tarefas.add(new Tarefa(titulo, descricao, concluida));
-        System.out.println("Tarefa adicionada com sucesso");
+    public void adicionarTarefa(int id, String titulo, String descricao, boolean concluida){
+        tarefas.add(new Tarefa(id, titulo, descricao, concluida));
+        System.out.println("------------------------------------Tarefa adicionada com sucesso");
     }
 
     public void listarTarefas(){
         for(Tarefa a : tarefas){
-            System.out.println("================================");
-            System.out.println("Título: " + a.getTitulo() +
-                                "\nDescricao: " + a.getDescricao() +
-                                "\nStatus: " + (a.getConcluida() == true ? "Concluída" : "Não-Concluída"));
+            System.out.println("------------------------------------================================");
+            System.out.println("------------------------------------ID: " + a.getId() +
+                                "\n------------------------------------Título: " + a.getTitulo() +
+                                "\n------------------------------------Descricao: " + a.getDescricao() +
+                                "\n------------------------------------Status: " + (a.getConcluida() == true ? "Concluída" : "Não-Concluída"));
         }
     }
 
@@ -30,15 +31,17 @@ public class TaskManager {
         if(tarefas.contains(tarefa)){
             tarefa.setConcluida(true);
         }else{
-            System.out.println("Não foi possível concluir. Tarefa não localizada!");
+            System.out.println("------------------------------------Não foi possível concluir. Tarefa não localizada!");
         }
     }
 
-    public void removerTarefa(Tarefa tarefa){
-        if(tarefas.contains(tarefa)){
-            tarefas.remove(tarefa);
-        }else{
-            System.out.println("Não foi possível remover. Tarefa não localizada!");
+    public void removerTarefa(int removerID){
+        for(Tarefa a : tarefas){
+            if(a.getId() == removerID){
+                tarefas.remove(a);
+                System.out.println("------------------------------------Tarefa " + a.getId() + " removida com sucesso");
+                break;
+            }
         }
     }
 }
